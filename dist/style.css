@@ -81,17 +81,13 @@ h1 { max-width: 12ch; margin: 0; font: 600 clamp(2.6rem, 12vw, 4.6rem)/.98 Fraun
 .hero-badges strong { color: var(--accent-on-light); font: 600 clamp(1.2rem, 4vw, 1.65rem)/1 Fraunces, Georgia, serif; }
 .hero-badges span { margin-top: .35rem; color: var(--text-muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
 .hero-visual { position: relative; padding: 1rem 0 0 .75rem; }
-.sun-disc { position: absolute; width: 70%; aspect-ratio: 1; right: -20%; top: -12%; border-radius: 50%; background: var(--support); opacity: .24; }
-.photo-frame, .about-photo { position: relative; overflow: hidden; background: var(--card); box-shadow: var(--shadow); }
-.photo-frame { aspect-ratio: 4 / 3; border-radius: 46% 20px 20px 20px; }
-.photo-frame img, .about-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; }
-.photo-frame img.is-missing, .about-photo img.is-missing { display: none; }
-.photo-fallback { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; color: var(--ink); }
-.photo-fallback::before { content: ""; width: 6rem; height: 6rem; margin: 0 auto 1rem; border: 2px dashed var(--support); border-radius: 50% 50% 43% 57%; }
-.photo-fallback span { font: 600 1.25rem Fraunces, Georgia, serif; }
-.photo-fallback small { margin-top: .2rem; text-transform: uppercase; letter-spacing: .14em; }
-.visual-note { position: relative; z-index: 3; max-width: 20rem; margin: -1.4rem 1rem 0 auto; padding: .9rem 1rem; background: var(--white); border-radius: 14px; box-shadow: 0 10px 30px rgba(14,37,54,.12); font-size: .8rem; font-weight: 600; }
-.visual-note span { color: var(--accent-on-light); margin-right: .45rem; }
+.brand-showcase { position: relative; min-height: 27rem; display: grid; place-items: center; overflow: hidden; border: 1px solid rgba(92,122,138,.35); border-radius: 46% 20px 20px 20px; background: var(--card); box-shadow: var(--shadow); }
+.brand-showcase::before, .brand-showcase::after { content: ""; position: absolute; border-radius: 50%; }
+.brand-showcase::before { width: 18rem; height: 18rem; right: -5rem; top: -5rem; background: rgba(92,122,138,.2); }
+.brand-showcase::after { width: 10rem; height: 10rem; left: -3rem; bottom: -3rem; background: rgba(193,100,47,.16); }
+.brand-showcase img { position: relative; z-index: 2; width: min(58%, 17rem); height: auto; filter: drop-shadow(0 16px 20px rgba(14,37,54,.18)); }
+.brand-showcase p { position: absolute; z-index: 3; right: 1rem; bottom: 1rem; max-width: 20rem; margin: 0; padding: .9rem 1rem; border-radius: 14px; color: var(--ink); background: var(--white); box-shadow: 0 10px 30px rgba(14,37,54,.12); font-size: .85rem; font-weight: 600; }
+.brand-orbit { position: absolute; z-index: 1; width: 66%; aspect-ratio: 1; border: 1px solid rgba(92,122,138,.5); border-radius: 50%; }
 
 .trust-strip { padding: 2rem 0; color: var(--on-dark); background: var(--ink); }
 .trust-grid { display: grid; grid-template-columns: auto 1fr; gap: .75rem 1.25rem; align-items: center; }
@@ -120,7 +116,6 @@ h1 { max-width: 12ch; margin: 0; font: 600 clamp(2.6rem, 12vw, 4.6rem)/.98 Fraun
 .care-intro { margin-bottom: 2.5rem; }
 .care-intro h2 { max-width: 14ch; }
 .care-layout { display: grid; gap: 2rem; }
-/* Paleta original do cartão de carimbos — manter independente do tema do site. */
 .care-stage { position: sticky; top: 5.25rem; z-index: 3; padding: .65rem; border-radius: 24px; background: #1b281c; box-shadow: 0 22px 65px rgba(0,0,0,.24); }
 .care-card { display: block; width: 100%; height: auto; }
 .care-card-bg { fill: #eadfc8; }
@@ -153,8 +148,7 @@ h1 { max-width: 12ch; margin: 0; font: 600 clamp(2.6rem, 12vw, 4.6rem)/.98 Fraun
 .review-theme p { margin: .7rem 0 0; color: var(--text-muted); }
 
 .about { background: var(--bg); }
-.about-grid { display: grid; gap: 2.5rem; align-items: center; }
-.about-photo { aspect-ratio: 4 / 3; border-radius: 20px 48% 20px 20px; }
+.about-grid { display: grid; max-width: 56rem; gap: 2.5rem; }
 .about-copy > p:not(.eyebrow) { max-width: 36rem; color: var(--text-muted); font-size: 1.06rem; }
 .about-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 2rem 0 0; }
 .about-facts div { padding-top: 1rem; border-top: 1px solid rgba(92,122,138,.55); }
@@ -235,7 +229,6 @@ h1 { max-width: 12ch; margin: 0; font: 600 clamp(2.6rem, 12vw, 4.6rem)/.98 Fraun
   .reviews-layout { grid-template-columns: .8fr 1.2fr; gap: 5rem; }
   .reviews-score { position: sticky; top: 7rem; }
   .review-theme { padding: 2rem; }
-  .about-grid { grid-template-columns: .95fr 1.05fr; gap: 5rem; }
   .location-grid { grid-template-columns: 1.35fr .65fr; }
   .map-card iframe { height: 31rem; }
   .hours-card { padding: 2.25rem; }

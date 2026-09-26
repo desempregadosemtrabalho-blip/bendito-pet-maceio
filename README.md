@@ -12,7 +12,3 @@ O projeto já está configurado para publicação direta pela Vercel:
 - Install Command: deixar em branco
 
 Ao importar este repositório na Vercel, basta manter a raiz do projeto e iniciar o deploy.
-
-## Contatos
-
-O telefone e os botões de WhatsApp estão ativos com o número público (82) 3142-5157. A confirmação final desse contato com o responsável continua registrada em `PENDENCIAS.md`.

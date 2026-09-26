@@ -2,12 +2,6 @@
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-document.querySelectorAll('.photo-frame img, .about-photo img').forEach((image) => {
-  const revealFallback = () => image.classList.add('is-missing');
-  image.addEventListener('error', revealFallback, { once: true });
-  if (image.complete && image.naturalWidth === 0) revealFallback();
-});
-
 window.trackEvent = function trackEvent(nome) {
   window.dispatchEvent(new CustomEvent('benditopet:track', { detail: { nome } }));
 };
