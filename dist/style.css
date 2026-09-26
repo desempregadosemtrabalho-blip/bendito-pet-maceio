@@ -63,6 +63,7 @@ h3 { margin: 0; font: 600 1.55rem/1.15 Fraunces, Georgia, serif; }
 .button-outline-light { color: var(--cream); border-color: rgba(247,242,231,.72); }
 .button-outline-light:hover { color: var(--forest); background: var(--cream); }
 .button-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+[data-pending-contact] { display: none !important; }
 .eyebrow { margin: 0 0 1rem; color: var(--terracotta-dark); font-size: .78rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .light-eyebrow { color: var(--mustard); }
 
