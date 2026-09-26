@@ -3,7 +3,7 @@
 Antes de publicar o site como página oficial da Bendito PET Maceió, confirmar:
 
 - [ ] Endereço correto: Google informa R. José Gonzaga de Almeida, 1176, Tabuleiro do Martins; o registro da empresa informa número 2066, Clima Bom.
-- [ ] Número oficial de WhatsApp e autorização para usá-lo nos botões do site.
+- [ ] Confirmar com o dono se o WhatsApp público (82) 3142-5157 deve permanecer nos botões do site.
 - [ ] Nome do responsável técnico e número do CRMV.
 - [ ] Lista real e completa de serviços oferecidos.
 - [ ] Se aceita plano de saúde pet e quais são os planos aceitos.

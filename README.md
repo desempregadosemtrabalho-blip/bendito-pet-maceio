@@ -13,6 +13,6 @@ O projeto já está configurado para publicação direta pela Vercel:
 
 Ao importar este repositório na Vercel, basta manter a raiz do projeto e iniciar o deploy.
 
-## Contatos pendentes
+## Contatos
 
-O telefone fixo está ativo no site. Os botões de WhatsApp permanecem ocultos até a confirmação do número oficial. Consulte `PENDENCIAS.md` antes de considerar a página como site oficial definitivo.
+O telefone e os botões de WhatsApp estão ativos com o número público (82) 3142-5157. A confirmação final desse contato com o responsável continua registrada em `PENDENCIAS.md`.
